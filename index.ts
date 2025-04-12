@@ -29,8 +29,8 @@ app.get("/", checkApiKey, (req, res) => {
   res.send(JSON.stringify(DATA));
 });
 
-// Route PUT /data
-app.put("/", checkApiKey, (req, res) => {
+// Route POST /data
+app.post("/", checkApiKey, (req, res) => {
   res.setHeader("Content-Type", "application/json");
   const data = req.body;
   DATA = { ...DATA, ...data };
