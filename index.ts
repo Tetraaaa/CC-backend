@@ -33,7 +33,12 @@ app.get("/", checkApiKey, (req, res) => {
 app.post("/", checkApiKey, (req, res) => {
   res.setHeader("Content-Type", "application/json");
   const data = req.body;
+  console.log("Got post : ", data);
+
   DATA = { ...DATA, ...data };
+
+  console.log("DATA : ", DATA);
+
   res.json({ message: "ok" });
 });
 
