@@ -11,6 +11,8 @@ let DATA = {
   battery_energy_percentage: 0,
   battery_input: 0,
   battery_output: 0,
+  battery_energy_needed: 0,
+  battery_max_energy: 0,
 };
 
 // 🔐 Middleware pour vérifier l'API key
