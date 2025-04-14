@@ -8,7 +8,9 @@ const app = express();
 const port = 4000;
 
 let DATA = {
-  energy_percentage: 0,
+  battery_energy_percentage: 0,
+  battery_input: 0,
+  battery_output: 0,
 };
 
 // 🔐 Middleware pour vérifier l'API key
